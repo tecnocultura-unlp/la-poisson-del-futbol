@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i">
+    <link rel="stylesheet" href="styles/reset.css">
+<!--     <link rel="stylesheet" href="styles/debug.css"> -->
+    <link rel="stylesheet" href="styles/article.css">
+    <link rel="stylesheet" href="styles/article-image.css">
+    <link rel="stylesheet" href="styles/article-figure.css">
+    <link rel="stylesheet" href="styles/article-text.css">
+    <link rel="stylesheet" href="styles/article-share.css">
+    <title>Ensayos | Football Analytics</title>
+</head>
+
+<body>
+    <article id="la-poisson-del-futbol">
+        <h1>
+            <a href="#la-poisson-del-futbol">La Poisson del fútbol</a>
+        </h1>
+        <br>
+        <time>MAR. 2, 2023</time>
+        <br><br>
+        <h2><em>Hace casi veinte años Michael Lewis publicaba Moneyball: The Art of Winning an Unfair Game, y abría de par en par la puerta para la (hasta ese momento) inexplorada relación entre el análisis de datos y el desempeño deportivo. Esa relación creció exponencialmente las últimas dos décadas y hoy es cada vez más estrecha. Este artículo intenta esbozar el punto donde la estadística explica el evento deportivo más popular del planeta: la ocurrencia del gol en un partido de fútbol.</em></h2>
+
+        <figure class="size-2">
+            <img src="images/stadium-audience.jpg" alt="Hinchada de fútbol">
+        </figure>
+        <figcaption></figcaption>
+        <p>
+            En "La observación de los pájaros", un cuento del Negro Fontanarrosa, un angustiado hincha de Central camina las calles de la ciudad mientras en la cancha de Newell´s se disputa el siempre picante clásico rosarino. Negado al martirio de mirar el partido por televisión o de escucharlo por la radio (que "es como pelearse con un tipo en una habitación a oscuras") el hincha recorre las calles volviéndose casi sin querer un detective que busca en los sonidos urbanos (una bomba de estruendo, el ocasional grito de un niño, el ladrido de un perro) el signo inequívoco de que se ha convertido un gol en el partido. Ahora imaginemos por un instante que el clásico del que hablamos se estuviera jugando pero en otra disciplina. En básquet por ejemplo. ¿Sería posible un recorrido análogo intentando adivinar los pormenores de un partido donde probablemente cada equipo marque entre 70 y 100 puntos? La respuesta es evidente: la pesquisa se volvería tan impracticable como improcedente. Como en toda trama detectivesca, la punta del ovillo que lleva a la resolución del caso suele ser lo disonante y lo extraño. Y es en parte por este motivo que el ethos que destila el personaje en el relato del Negro sería irreproducible si el deporte en cuestión no fuera el fútbol: a diferencia de la mayoría de los deportes, en el fútbol la conversión de un tanto es más la excepción que la regla. A pesar de ser el fundamento último del juego, el gol es, en sí mismo, un evento raro. Como afirman Anderson y Sally en The Numbers Game: Why Everything You Know About Football Is Wrong, el fútbol es un deporte donde la gratificación de gritar un gol parece siempre postergada. Los hinchas de fútbol son, por definición, pobres víctimas de la espera. Y, como bien reconoce el personaje del cuento, "lo que mata es la ansiedad."      
+        </p>
+
+        <h3>A la búsqueda de los goles perdidos</h3>
+        
+        <figure class="size-2">
+            <img src="images/chaos-soccer-gear-unsplash.jpg" alt="Arco y pelota">
+        </figure>
+        <figcaption></figcaption>
+        <p>
+            En los difusos orígenes del juego más popular del mundo podemos encontrar anécdotas más propias de una ocurrencia de Les Luthiers que de un deporte profesional que mueve millones. En septiembre de 1885, una invitación por carta que llegó a manos equivocadas terminó con un equipo aficionado de cricket, Bon Accord, perdiendo 36 a 0 frente al Arbroth por la Copa de Escocia. Ese partido, que quedó en la historia por la inusual cantidad de goles convertidos, es también un signo de los tiempos y una marca de origen que el desarrollo posterior de la táctica y la estrategia terminarían erosionando casi por completo.
+        </p>
+        <p>
+            En efecto, con el pasar de las décadas, el pronunciado descenso en la cantidad de goles por partido llevó a las autoridades a cambiar algunas reglas para ver si así lograban que más pelotas llegaran al fondo de la red. Primero modificaron la ley del offside, reduciendo de 3 a 2 los defensores delante de la línea de la pelota necesarios para habilitar al atacante. Después aumentaron de 2 a 3 los puntos destinados al vencedor, repartiendo un punto por equipo en caso de empate y dejando sin nada al perdedor, esperando que así se tomaran más riesgos. También se prohibió el pase atrás hacia el arquero, viejo recurso de los equipos en ventaja que ya no querían seguir jugando. Pero nada logró detener la sostenida caída promedio en la cantidad de goles, que ya a mediados de los años '70 se estabilizó, de modo uniforme a nivel mundial, sin importar qué liga o división uno mire, cerca de los dos goles y medio por partido.
+        </p>
+        <p>
+            Johann Cruyff, el motor de la Naranja Mecánica que daba espectáculo hace medio siglo, afirmaba que "la coincidencia tiene lógica". Esta crónica escasez de goles, lamentada por sibaritas de paladar negro y cultores del fútbol champagne, tiene, como algunos otros eventos, una lógica particular. Irónicamente, esta lógica es, como veremos, la lógica de lo impredecible.
+        </p>
+
+        <h3>Accidentes a caballos y colectivos que no frenan</h3>
+
+        <figure class="size-2">
+            <img src="images/horses-galloping.jpg" alt="Caballo y bruma">
+        </figure>
+        <figcaption></figcaption>
+        <p>
+            Al parecer la aplicación de funciones matemáticas nace de lugares curiosos. A finales del siglo XIX alguien se puso a revisar en los registros notariales del ejército alemán el número de soldados muertos a causa de un golpe mortal dado por un caballo del propio regimiento. Resultaba llamativo que mientras durante años ningún accidente había sido registrado, de repente aparecía un año especialmente trágico y varias muertes eran reportadas al unísono. La variabilidad en el número de accidentes anuales y la inexistencia de causas externas evidentes que influyeran parecían dejar este tipo de accidentes y su distribución a lo largo de los años en un limbo de azar e indeterminación. Saltando en el tiempo y el espacio, varias veces, a punto de llegar a la esquina de la parada del Este (la única línea que llega desde mi casa al centro) vi pasar con resignación cuatro (¡cuatro!) micros a la vez, uno más vacío que el otro, totalmente indiferentes a mi desesperada y silenciosa súplica de que por un vuelco del destino (¿un súbito cambio de color en el semáforo, una viejita cruzando de manera imprudente?) alguno frenase dándome tiempo de subirme. 
+        </p>
+
+        <figure class="size-2">
+            <img src="images/city-chaos.jpg" alt="Luz y ciudad">
+        </figure>
+        <figcaption></figcaption>
+        <p>
+            David Sumpter, un matemático al que le gusta hablar de fútbol (tanto le gusta que escribió un libro entero, Soccermatics, dedicado al tema) señala este trágico suceso de mi vida cotidiana, así como esos años especialmente desdichados donde varias muertes se producían a la vez en los regimientos alemanes, como una especie de necesidad estadística. De hecho, explica que hay una distribución matemática, la distribución de Poisson (bautizada en honor al físico francés que la propuso en 1838) que permitió al analista de los registros alemanes aproximar bastante la sucesión fortuita de accidentes en el ejército, y que hoy me permitiría, sabiendo cada cuánto tiempo pasa un Este por la esquina de mi casa, calcular la probabilidad de que cuatro colectivos de esa línea pasen juntos y me hagan sentir el tipo con menos suerte del planeta. Lo central desde esta perspectiva es asumir que hay eventos que suceden raramente, pero que la simple repetición indefinida, dentro de unas condiciones dadas, hará que del océano de normalidad de la vida (donde un micro pasa cada 10 o 15 minutos) emerja lo extraño, lo aparentemente inexplicable (4 micros pasando al mismo tiempo y la ulterior condena de pasar una hora entera esperando en la parada).
+        </p>
+
+        <h3>Predecir el azar</h3>
+
+        <figure class="size-2">
+            <img src="images/kicking-penalty.jpg" alt="Sombra y pelota">
+        </figure>
+        <figcaption></figcaption>
+        <p>
+            Sumpter (que también tiene un canal en Youtube, Friends of Tracking, donde junto a un grupo de científicos de datos hacen divulgación sobre analítica aplicada al deporte) afirma que "es lo impredecible de un partido de fútbol de un minuto al que le sigue lo que genera la Poisson después de 90 minutos. Conocemos el número promedio de goles marcados por partido, pero su timing es impredecible. Como consecuencia, algunos resultados se vuelven mucho más probables que otros. La paradoja acá es que los resultados son explicados por su aleatoriedad. El hecho de que los goles sean muy aleatorios en el tiempo vuelve predecible el patrón de resultados. Es difícil de pensar, pero es verdad. A menudo el solo hecho de que algo es extremadamente aleatorio nos ayuda a explicarlo y a predecir cada cuánto va a ocurrir. Lo aleatorio nos permite hacer toda clase de predicciones acerca del futuro." Resulta entonces que una antigua distribución matemática permite modelar la probabilidad de que ese mágico y misterioso milagro deportivo llamado gol se materialice haciendo delirar a los ávidos simpatizantes futboleros. ¿Pero cómo hacemos esto?
+        </p>
+        <p>
+            Retomando la cita de Sumpter, podemos señalar las pocas premisas necesarias para un uso adecuado de la función. Primero, la distribución de Poisson permite medir la probabilidad de que un gol ocurra a partir de una media conocida de goles por partido. Es decir, como en muchos otros casos, para poder predecir el futuro hay que tener información del pasado. La segunda premisa es que para analizar un suceso cualquiera bajo esta función hay que asumir independencia entre esos sucesos (o sea, el hecho de que el evento a analizar ya se haya producido no cambia la probabilidad de ocurrencia posterior del mismo evento -a esta cualidad se la conoce como 'pérdida de memoria' de la distribución). Aplicado al fútbol, sabemos que, al menos en teoría, un tanto convertido en un momento dado no afecta la probabilidad de que pueda haber uno, dos o más goles, sea al minuto siguiente o en cualquier otro minuto aleatorio del partido (ahí reside lo impredecible de su timing). En resumen, para poder ser analizado bajo la distribución de Poisson, el evento tiene que ser matemáticamente raro, aleatorio, e independiente, todas cualidades que ya hemos visto como propias de un gol de fútbol.  
+        </p>
+
+        <figure class="size-2">
+            <img src="images/poisson distribution.png" alt="Distribución de Poisson">
+        </figure>
+        <figcaption><p>Distribución ideal de Poisson con una media de 2,45</p></figcaption>
+        <p>
+            La sentencia de Cruyff de que la coincidencia tiene lógica concluía como sigue: "Si pateo al arco desde 30 metros, probablemente no convierta. Pero si repito el tiro 20 veces en el partido, hay grandes chances de que una termine adentro." Para Cruyff, como para los matemáticos, lo raro, en la vida y en el fútbol, es una simple cuestión estadística.
+        </p>
+        <p>
+            Para terminar, veamos una simple aplicación de esas premisas usando los datos del torneo de la Liga Profesional de Argentina que terminó coronando a River en el 2021. En las 25 fechas que duró la competencia se convirtieron 796 goles en 325 partidos jugados, lo que da un promedio de 2,45 goles por partido. Con este promedio calculado podemos pasar al terreno de las probabilidades. Ese promedio, llamado media o lambda, como la letra griega, es el único parámetro que necesita la función de Poisson para hacer su magia. Si yo tuviera que imaginar la cantidad de goles por partido que tendrá la primera fecha del campeonato del 2022, podría tomar estos datos previos como fuente y ponerme a jugar con las variables posibles. Por ejemplo, podría preguntarme qué probabilidad existe de que con la media conocida de 2,45 se conviertan en un partido cualquiera tres o más goles, y aplicando la fórmula de Poisson tendría la respuesta: 0.44, es decir, hay en teoría una probabilidad de casi el 45% de que se convierta ese número (un número indefinido, por cierto) de goles. Este simple resultado demuestra en parte la tesis esbozada a lo largo de estos párrafos: lo poco probable que resulta ver muchos goles en un mismo partido. Si la posibilidad de que se conviertan 3, 4, 5 o más goles en un partido abarca en total el 45% de las chances, eso significa, por la contraria, que más de la mitad de los partidos va a terminar con 0, 1 o 2 goles como mucho. Con esto en cuenta podría preguntar cuál es la probabilidad de que dos equipos empaten sin marcar. Nuevamente aplicando Poisson, la probabilidad resultante es de poco menos del 10%(0.08). Teóricamente, de los 13 partidos disputados cada fecha el torneo que pasó, aproximadamente entre 1 y 2 terminaron con un amargo 0 a 0.
+        </p>
+
+        <figure class="size-2">
+            <img src="images/Distribución de goles x partido durante la LPA 2021 .png" alt="Distribución LPA 2021">
+        </figure>
+        <figcaption><p>Distribución real de goles por partido en el último torneo argentino</p></figcaption>
+
+        <p>
+            Datos con algunos matices pero casi idénticos a los devueltos por la función de Poisson muestra, de hecho, el gráfico resultante de contar cuántos goles hubo en cada partido y sumar luego el total de repeticiones a lo largo del torneo. La función tiene su punto más alto en los 2 goles por partido (80 partidos en total en todo el torneo), valores relativamente elevados para 1 y 3 goles (65 y 66 partidos, respectivamente), y ya menos pronunciados para partidos con cuatro goles (34) o con empates en cero (38). Durante el resto del eje X, a medida que crece la cantidad de goles, la función no hace más que decrecer: hubo apenas un partido con 8 goles, el infartante clásico platense que terminó en empate a 4, y tan solo uno con 9, el inverosímil 8-1 de Boca a Central Córdoba en la última fecha.
+        </p>
+        <p>
+            La condición del gol como evento extraño e inusual queda expuesta ahora en la fría evaluación de los datos. Como ya había descubierto aquel paciente estudioso de accidentados soldados alemanes, como afirma Sumpter respecto de los goles en el fútbol, el modelo propuesto por Poisson y la realidad se terminan confundiendo. Esto no deja de ser una modesta muestra de cómo en un mundo donde los datos y su análisis están afectando el juego de maneras cada vez más decisivas, la estadística y el fútbol pueden encontrarse, de forma inesperada, haciendo jueguitos y tirando paredes.
+        </p>
+
+        <div class="share">
+            <a href="https://www.twitter.com" target="_blank" rel="noopener norreferer"><img src="images/icons8-twitter.svg" alt="twitter icon"></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener norreferer"><img src="images/icons8-instagram.svg" alt="instagram icon"></a>
+        </div>
+
+    </article>
+</body>
+</html>
